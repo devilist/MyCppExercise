@@ -14,8 +14,8 @@ void showStringWrapper();
 
 void exercise10()
 {
-//    showStock();
-//    showStringWrapper();
+    showStock();
+    showStringWrapper();
 }
 
 

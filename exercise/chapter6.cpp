@@ -19,8 +19,8 @@ void exercise6()
 {
     string file_name = "exercise6_file.txt";
 
-//    writeToFile(file_name);
-//    readFromFile(file_name);
+    writeToFile(file_name);
+    readFromFile(file_name);
 }
 
 

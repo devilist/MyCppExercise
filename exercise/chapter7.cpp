@@ -17,7 +17,7 @@ void array_function_exercise();
 
 void exercise7()
 {
-//    array_function_exercise();
+    array_function_exercise();
 }
 
 void array_function_exercise()

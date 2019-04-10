@@ -15,7 +15,7 @@ void testqueue();
 
 void exercise12()
 {
-//    testqueue();
+    testqueue();
 }
 
 void testqueue()

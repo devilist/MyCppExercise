@@ -19,4 +19,6 @@ add_executable(MyCppExercise main.cpp
         exercise/class/acctabc.cpp exercise/class/acctabc.h
         exercise/class/student.cpp exercise/class/student.h
         exercise/class/stacktp.cpp exercise/class/stacktp.h
-        exercise/chapter14.cpp exercise/h/chapter14.h)
+        exercise/chapter14.cpp exercise/h/chapter14.h
+        primer/PrimerExercise.cpp primer/PrimerExercise.h
+        exercise/PlusExercise.cpp exercise/PlusExercise.h)
