@@ -24,6 +24,6 @@ extern const int d_int_main = 15; // 可以被外部文件访问
 
 int main() {
     runPlusExercise();
-    runPrimeExercise()
+    runPrimeExercise();
     return 0;
 }
