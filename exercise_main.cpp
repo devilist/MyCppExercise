@@ -1,6 +1,5 @@
 #include <iostream>
 #include "exercise/PlusExercise.h"
-#include "primer/PrimerExercise.h"
 
 using namespace std;
 
@@ -24,6 +23,5 @@ extern const int d_int_main = 15; // 可以被外部文件访问
 
 int main() {
     runPlusExercise();
-    runPrimeExercise();
     return 0;
 }
