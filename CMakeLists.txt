@@ -18,4 +18,4 @@ add_executable(PrimerPlus exercise_main.cpp ${SRC_PRIMER_PLUS})
 
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/primer SRC_PRIMER)
 include_directories(${CMAKE_CURRENT_LIST_DIR}/primer)
-add_executable(Primer primer_main.cpp ${SRC_PRIMER})
+add_executable(Primer primer_main.cpp ${SRC_PRIMER} primer/h/prime_chapter3.h primer/prime_chapter3.cpp)
