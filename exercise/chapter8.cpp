@@ -52,8 +52,8 @@ void exercise_for_template();
 
 void exercise8()
 {
-//    exercise_ref_for_fun();
-//    exercise_for_template();
+    exercise_ref_for_fun();
+    exercise_for_template();
 
 }
 

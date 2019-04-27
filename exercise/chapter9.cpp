@@ -35,7 +35,7 @@ void update();
 
 void exercise9()
 {
-//    update();
+    update();
 }
 
 void update()

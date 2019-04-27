@@ -39,7 +39,7 @@ void while_loop()
 
 void exercise5()
 {
-//    for_loop();
-//    while_loop();
+    for_loop();
+    while_loop();
 
 }

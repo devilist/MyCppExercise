@@ -1,13 +1,5 @@
 #include <iostream>
-#include "exercise/h/chapter4.h"
-#include "exercise/h/chapter5.h"
-#include "exercise/h/chapter6.h"
-#include "exercise/h/chapter7.h"
-#include "exercise/h/chapter8.h"
-#include "exercise/h/chapter9.h"
-#include "exercise/h/chapter10.h"
-#include "exercise/h/chapter12.h"
-#include "exercise/h/chapter14.h"
+#include "exercise/PlusExercise.h"
 
 using namespace std;
 
@@ -29,16 +21,7 @@ extern const int d_int_main = 15; // 可以被外部文件访问
 
 //----------------------------------------------------------------------------------
 
-int main()
-{
-    exercise4();
-    exercise5();
-    exercise6();
-    exercise7();
-    exercise8();
-    exercise9();
-    exercise10();
-    exercise12();
-    exercise14();
+int main() {
+    runPlusExercise();
     return 0;
 }

@@ -22,9 +22,9 @@ void exercise_string()
     cout << "str point value is: " << *strPoint << endl;
     cout << "str point location is: " << strPoint << endl;
     cout << "str point (int) is: " << (int *) strPoint << endl;
-    char strArray[20] = "°¡Ñ½Ñ½";
+    char strArray[20] = "ï¿½ï¿½Ñ½Ñ½";
     cout << "str array is " << strArray << endl;
-    strcpy(strArray, "Éµ±Æ");
+    strcpy(strArray, "Éµï¿½ï¿½");
     cout << "str array is " << strArray << endl;
 }
 
@@ -34,21 +34,21 @@ void exercise_struct()
     ps->name = "i am a struct pointer";
     ps->volume = 1.6;
     ps->price = 200;
-    cout << "\nÁ½ÖÖ·ÃÎÊ½á¹¹£¨Ö¸Õë£©³ÉÔ±µÄ·½Ê½£º\n";
+    cout << "\nï¿½ï¿½ï¿½Ö·ï¿½ï¿½Ê½á¹¹ï¿½ï¿½Ö¸ï¿½ë£©ï¿½ï¿½Ô±ï¿½Ä·ï¿½Ê½ï¿½ï¿½\n";
     cout << "ps->name:   " << ps->name << endl;
     cout << "(*ps).name: " << (*ps).name << endl << "\n";
-    cout << "½á¹¹Ö¸ÕëpsµÄµØÖ·£º " << ps << endl;
-    cout << "ps->nameµÄµØÖ·£º  " << &(ps->name) << endl;
+    cout << "ï¿½á¹¹Ö¸ï¿½ï¿½psï¿½Äµï¿½Ö·ï¿½ï¿½ " << ps << endl;
+    cout << "ps->nameï¿½Äµï¿½Ö·ï¿½ï¿½  " << &(ps->name) << endl;
 
     cout.setf(ios_base::boolalpha);
 
-    // ÊÍ·ÅÄÚ´æ
+    // ï¿½Í·ï¿½ï¿½Ú´ï¿½
     delete ps;
 }
 
 void exercise4()
 {
-//    exercise_string();
-//    exercise_struct();
+    exercise_string();
+    exercise_struct();
 
 }
