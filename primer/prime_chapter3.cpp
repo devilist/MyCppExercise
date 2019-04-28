@@ -13,14 +13,45 @@ void arrayExercise();
 
 
 void exercise3() {
+    arrayExercise();
     vectorExercise();
-
 }
 
 void arrayExercise() {
     unsigned size = 10;
     int int_array[size];
     string bad[size];
+
+    int ia[3][4] = {
+            {1, 2,  3,  4},
+            {5, 6,  7,  8},
+            {9, 10, 11, 12}
+    };
+
+    for (auto p = ia; p != ia + 3; p++) {
+        for (auto q = *p; q != *p + 4; ++q) {
+            cout << *q << " ";
+        }
+        cout << endl;
+    }
+
+    cout << "no use auto" << endl;
+    for (int(*p)[4] = ia; p != ia + 3; p++) {
+        // p是一个指向长度为4的数组的指针，对p解引用后得到该数组
+        for (int *q = *p; q != *p + 4; ++q) {
+            cout << *q << " ";
+        }
+        cout << endl;
+    }
+    cout << "use iter" << endl;
+    for (int(*p)[4] = begin(ia); p != end(ia); p++) {
+        // p是一个指向长度为4的数组的指针，对p解引用后得到该数组
+        for (int *q = begin(*p); q != end(*p); ++q) {
+            cout << *q << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
 }
 
 void vectorExercise() {
