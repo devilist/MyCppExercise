@@ -18,10 +18,14 @@ void exercise3() {
 }
 
 void arrayExercise() {
-    unsigned size = 10;
-    int int_array[size];
+    const unsigned size = 10;
+    int int_array[size] = {21, 0, 0};
     string bad[size];
-
+    int *pStart = begin(int_array);
+    int *pEnd = end(int_array);
+    cout << "pStart " << *pStart << endl;
+    cout << "pEnd " << *pEnd << endl;
+///////////////////////////////////////////////////////
     int ia[3][4] = {
             {1, 2,  3,  4},
             {5, 6,  7,  8},
@@ -45,9 +49,8 @@ void arrayExercise() {
     }
     cout << "use iter" << endl;
     for (int(*p)[4] = begin(ia); p != end(ia); p++) {
-        // p是一个指向长度为4的数组的指针，对p解引用后得到该数组
         for (int *q = begin(*p); q != end(*p); ++q) {
-            cout << *q << " ";
+            cout << *q << ",";
         }
         cout << endl;
     }
