@@ -3,6 +3,15 @@ project(MyCppExercise)
 
 set(CMAKE_CXX_STANDARD 11)
 
+add_compile_options(-std==c++11)
+
+add_definitions(-D DEBUG=1)
+
+SET(CMAKE_BUILD_TYPE "Release")
+
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O0 -Wall -g -ggdb")
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -Wall")
+
 # 设置版本号
 set(MyCppExercise_VERSION_MAJOR 1)
 set(MyCppExercise_VERSION_MINOR 0)
@@ -17,5 +26,6 @@ include_directories(${PROJECT_SOURCE_DIR}/exercise)
 add_executable(PrimerPlus exercise_main.cpp ${SRC_PRIMER_PLUS})
 
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/primer SRC_PRIMER)
+aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/primer/class SRC_PRIMER)
 include_directories(${CMAKE_CURRENT_LIST_DIR}/primer)
-add_executable(Primer primer_main.cpp ${SRC_PRIMER} primer/h/prime_chapter3.h primer/prime_chapter3.cpp)
+add_executable(Primer primer_main.cpp ${SRC_PRIMER})

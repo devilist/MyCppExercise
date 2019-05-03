@@ -11,6 +11,8 @@ void vectorExercise();
 
 void arrayExercise();
 
+void fun_print_array(int(&)[10]);
+
 
 void exercise3() {
     arrayExercise();
@@ -74,10 +76,20 @@ void vectorExercise() {
     for (auto it = v.begin(); it != v.end(); it++) {
         *it = *it - 1;
     }
-    for (unsigned i:v) {
-        cout << i << " ";
+    it = v.begin();
+    while (it != v.end()) {
+        cout << *it++ << " ";
     }
+    cout << endl;
 
     vector<string> sv{"some", "days"};
     vector<string>::iterator sv_it = sv.begin();
+}
+
+void fun_print_array(int (&iarr)[10]) {
+
+    for (int i:iarr) {
+        cout << i << endl;
+    }
+
 }
