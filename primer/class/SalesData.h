@@ -28,12 +28,26 @@ public:
 //    SalesData() = default;
     SalesData();
 
+    // 拷贝构造函数
+    SalesData(const SalesData &salesData);
+
     SalesData(const std::string &s, unsigned n, double p);
 
     // 禁用构造函数隐式转换
     explicit SalesData(const std::string &s);
 
     explicit SalesData(std::istream &);
+
+    // 拷贝合成运算符
+    SalesData &operator=(const SalesData &rhs);
+
+    ~SalesData();
+
+    ///////////////////////////////////////////////////////////////
+
+    void setUnitSold(unsigned sold);
+
+    void setBookNo(std::string s);
 
     SalesData &combine(const SalesData &);
 

@@ -4,12 +4,13 @@
 
 #include "h/prime_chapter3.h"
 #include "h/prime_chapter6.h"
+#include "h/prime_chapter13.h"
 #include "PrimerExercise.h"
 
 void runExercise(int chapter);
 
 void runPrimeExercise() {
-    int chapter = 6;
+    int chapter = 13;
     runExercise(chapter);
 };
 
@@ -20,6 +21,9 @@ void runExercise(int chapter) {
             break;
         case 6:
             exercise_6();
+            break;
+        case 13:
+            exercise_13();
             break;
         default:
             break;

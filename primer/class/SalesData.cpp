@@ -4,10 +4,19 @@
 
 #include "SalesData.h"
 
+using namespace std;
+
 int SalesData::defaultP = 100;
 
 SalesData::SalesData() : SalesData("", 0, 0) {
 
+}
+
+SalesData::SalesData(const SalesData &salesData) :
+        bookNo(salesData.bookNo),
+        unitSold(salesData.unitSold),
+        revenue(salesData.revenue) {
+    cout << "copy constructor is called" << endl;
 }
 
 SalesData::SalesData(const std::string &s, unsigned n, double p)
@@ -28,6 +37,29 @@ SalesData::SalesData(std::istream &is) : SalesData() {
     read(is, *this);
 }
 
+// 拷贝赋值运算符
+SalesData &SalesData::operator=(const SalesData &rhs) {
+    cout << "copy operator is called" << endl;
+    bookNo = rhs.bookNo;
+    unitSold = rhs.unitSold;
+    revenue = rhs.revenue;
+    return *this;
+}
+
+SalesData::~SalesData() {
+    cout << "destructor is called: bookNo: " << bookNo
+         << " unitSold: " << unitSold
+         << " revenue: " << revenue << endl;
+
+}
+
+void SalesData::setUnitSold(unsigned sold) {
+    unitSold = sold;
+}
+
+void SalesData::setBookNo(std::string s) {
+    bookNo = s;
+}
 
 SalesData &SalesData::combine(const SalesData &rhs) {
     unitSold += rhs.unitSold;

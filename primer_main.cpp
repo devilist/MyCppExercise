@@ -3,7 +3,6 @@
 //
 #include <iostream>
 #include "primer/PrimerExercise.h"
-#include "primer/class/HasPtr.h"
 
 int main() {
     runPrimeExercise();
