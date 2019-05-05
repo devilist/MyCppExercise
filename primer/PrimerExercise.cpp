@@ -5,6 +5,7 @@
 #include "h/prime_chapter3.h"
 #include "h/prime_chapter6.h"
 #include "h/prime_chapter13.h"
+#include "h/prime_chapter15.h"
 #include "PrimerExercise.h"
 
 void runExercise(int chapter);

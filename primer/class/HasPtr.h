@@ -30,10 +30,10 @@ public:
 
     HasPtr &operator=(const HasPtr &p);
 
-    HasPtr &operator=(HasPtr p) {
-//        std::swap(*this, p);
-        return *this;
-    }
+//    HasPtr &operator=(HasPtr p) {
+////        std::swap(*this, p);
+//        return *this;
+//    }
 
 
     ~HasPtr() { delete ps; };
