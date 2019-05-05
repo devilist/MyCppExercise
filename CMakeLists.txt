@@ -3,7 +3,7 @@ project(MyCppExercise)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_compile_options(-std==c++11)
+add_compile_options(-std=c++11)
 
 add_definitions(-D DEBUG=1)
 
