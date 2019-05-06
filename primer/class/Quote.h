@@ -26,10 +26,11 @@ public:
     }
 
     virtual double net_price(std::size_t n) const {
+        std::cout << "Quote net_price is called" << std::endl;
         return n * price;
     }
 
-    virtual ~Quote() = default;
+    virtual ~Quote();
 
 };
 

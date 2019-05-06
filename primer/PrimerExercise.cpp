@@ -11,7 +11,7 @@
 void runExercise(int chapter);
 
 void runPrimeExercise() {
-    int chapter = 13;
+    int chapter = 15;
     runExercise(chapter);
 };
 
@@ -25,6 +25,9 @@ void runExercise(int chapter) {
             break;
         case 13:
             exercise_13();
+            break;
+        case 15:
+            exercise_15();
             break;
         default:
             break;
