@@ -4,15 +4,21 @@
 
 #include "h/prime_chapter3.h"
 #include "h/prime_chapter6.h"
+#include "h/prime_chapter12.h"
 #include "h/prime_chapter13.h"
 #include "h/prime_chapter15.h"
 #include "PrimerExercise.h"
 
+#define RUN_EXERCISE(f, num) f##num()
+
 void runExercise(int chapter);
 
 void runPrimeExercise() {
-    int chapter = 15;
-    runExercise(chapter);
+
+    RUN_EXERCISE(exercise, _12);
+
+//    int chapter = 15;
+//    runExercise(chapter);
 };
 
 void runExercise(int chapter) {

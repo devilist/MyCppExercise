@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/MyCppExercise.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+cmake-build-debug/
