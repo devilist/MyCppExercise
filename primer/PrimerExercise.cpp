@@ -4,6 +4,7 @@
 
 #include "h/prime_chapter3.h"
 #include "h/prime_chapter6.h"
+#include "h/prime_chapter11.h"
 #include "h/prime_chapter12.h"
 #include "h/prime_chapter13.h"
 #include "h/prime_chapter15.h"
@@ -16,6 +17,7 @@ void runExercise(int chapter);
 void runPrimeExercise() {
 
     RUN_EXERCISE(exercise, _12);
+    RUN_EXERCISE(exercise, _11);
 
 //    int chapter = 15;
 //    runExercise(chapter);

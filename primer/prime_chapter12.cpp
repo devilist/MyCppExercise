@@ -6,13 +6,17 @@
 #include <memory>
 #include "h/prime_chapter12.h"
 #include "class/BulkQuote.h"
+#include "class/StrBlob.h"
 
 using namespace std;
 
 void sharePtrRun();
 
+void dynamicAlloc();
+
 void exercise_12() {
     sharePtrRun();
+    dynamicAlloc();
 }
 
 void sharePtrRun() {
@@ -31,4 +35,23 @@ void sharePtrRun() {
     cout << spBQ.unique() << " " << spBQ.use_count() << endl;
     cout << spBQ1.unique() << " " << spBQ1.use_count() << endl;
     cout << spBQ2.unique() << " " << spBQ2.use_count() << endl;
+}
+
+void dynamicAlloc() {
+    allocator<string> m_alloc;
+    string *const p = m_alloc.allocate(10);
+    auto q = p;
+    m_alloc.construct(q++, "1");
+    m_alloc.construct(q++, 5, 'c');
+    m_alloc.construct(q++, "hi");
+    cout << *p << endl;
+    cout << *(q - 1) << endl;
+
+    // 释放
+    while (q != p) {
+        m_alloc.destroy(--q);
+    }
+    m_alloc.deallocate(p, 10);
+
+
 }

@@ -1,0 +1,10 @@
+//
+// Created by ZengPu on 2019-05-08.
+//
+
+#ifndef MYCPPEXERCISE_PRIME_CHAPTER11_H
+#define MYCPPEXERCISE_PRIME_CHAPTER11_H
+
+void exercise_11();
+
+#endif //MYCPPEXERCISE_PRIME_CHAPTER11_H
