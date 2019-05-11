@@ -4,6 +4,7 @@
 
 
 #include <iostream>
+#include <algorithm>
 
 // 关联容器
 #include <map>
@@ -31,8 +32,11 @@ using namespace std;
 
 void mapRun();
 
+void algorithmRun();
+
 void exercise_11() {
     mapRun();
+    algorithmRun();
 }
 
 void mapRun() {
@@ -60,8 +64,10 @@ void mapRun() {
 
     // 队列适配器  fifo
     queue<int> intQueue;
+}
 
-
+void algorithmRun() {
+//    find()
 }
 
 
