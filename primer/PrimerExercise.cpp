@@ -17,7 +17,7 @@ void runExercise(int chapter);
 
 void runPrimeExercise() {
 
-    RUN_EXERCISE(exercise, _16);
+    RUN_EXERCISE(exercise, _13);
 
 //    int chapter = 15;
 //    runExercise(chapter);

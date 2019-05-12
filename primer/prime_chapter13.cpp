@@ -2,6 +2,7 @@
 // Created by ZengPu on 2019-05-04.
 //
 
+#include <typeinfo>
 #include <vector>
 #include <iostream>
 #include "h/prime_chapter13.h"
@@ -39,6 +40,8 @@ void copyControl() {
     HasPtr hasPtr0("hasPtr_0");
     HasPtr hasPtr1("hasPtr_1");
     hasPtr1 = hasPtr0;
+
+    cout << "typeid "<<typeid(hasPtr1).name() << endl;
 
     // 行为像指针的类
     HasPtr1 hasPtr10("hasPtr1_0");
