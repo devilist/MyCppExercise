@@ -29,3 +29,8 @@ aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/primer SRC_PRIMER)
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/primer/class SRC_PRIMER)
 include_directories(${CMAKE_CURRENT_LIST_DIR}/primer)
 add_executable(Primer primer_main.cpp ${SRC_PRIMER})
+
+# rapid parser
+aux_source_directory(${PROJECT_SOURCE_DIR}/jsonparser SRC_JSON_PARSER)
+include_directories(${PROJECT_SOURCE_DIR}/jsonparser)
+add_executable(JsonParser json_parser_main.cpp ${SRC_JSON_PARSER})
