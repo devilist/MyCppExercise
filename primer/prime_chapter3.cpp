@@ -5,18 +5,29 @@
 #include <iostream>
 #include "h/prime_chapter3.h"
 
+typedef struct {
+    float x;
+    float y;
+} vec2;
+
+float arrayF[]{1.0f, 2.0f, 3.0f, 4.0f};
+
 using namespace std;
 
 void vectorExercise();
 
 void arrayExercise();
 
+void fun_print_int_array(int arr[]);
+
 void fun_print_array(int(&)[10]);
 
+void pointTrans(vec2 *v);
 
 void exercise3() {
     arrayExercise();
     vectorExercise();
+    pointTrans((vec2 *) arrayF);
 }
 
 void arrayExercise() {
@@ -57,6 +68,9 @@ void arrayExercise() {
         cout << endl;
     }
     cout << endl;
+    cout << "int array size :" << sizeof(int_array) / sizeof(int) << endl;
+    fun_print_int_array(int_array);
+    float fArray[3];
 }
 
 void vectorExercise() {
@@ -86,10 +100,22 @@ void vectorExercise() {
     vector<string>::iterator sv_it = sv.begin();
 }
 
+void fun_print_int_array(int arr[]) {
+    cout << "fun_print_int_array size :" << sizeof(arr) << endl;
+    cout << "fun_print_int_array size :" << arr << endl;
+    cout << "fun_print_int_array size :" << &arr << endl;
+    cout << "fun_print_int_array size :" << *arr << endl;
+
+}
+
 void fun_print_array(int (&iarr)[10]) {
 
     for (int i:iarr) {
         cout << i << endl;
     }
 
+}
+
+void pointTrans(vec2 *v) {
+    cout << "x " << v[0].x << " y " << v[0].y << endl;
 }

@@ -33,14 +33,36 @@ void parserJson(const char *pCharJson) {
             iter++;
         }
     }
-
+    cout << "d.IsArray(): " << d.IsArray() << endl;
     if (d.IsArray()) {
+        const auto &array = d.GetArray();
 
     }
 }
 
 void parserJson() {
-    const char *json = "{\"project\":\"rapidjson\",\"stars\":10}";
+    const char *json = "[\n"
+                       "     {\n"
+                       "     \t\"type\":\"sampler2D\",\n"
+                       "     \t\"name\":\"inputImageTexture0\",\n"
+                       "     \t\"value\":\"Background.webp\"\n"
+                       "     },\n"
+                       "     {\n"
+                       "     \t\"type\":\"sampler2D\",\n"
+                       "     \t\"name\":\"inputImageTexture1\",\n"
+                       "     \t\"value\":\"overlay.png\"\n"
+                       "     },\n"
+                       "     {\n"
+                       "     \t\"type\":\"sampler2D\",\n"
+                       "     \t\"name\":\"inputImageTexture2\",\n"
+                       "     \t\"value\":\"Map.png\"\n"
+                       "     },\n"
+                       "     {\n"
+                       "     \t\"type\":\"sampler2D\",\n"
+                       "     \t\"name\":\"inputImageTexture3\",\n"
+                       "     \t\"value\":\"curve.bmp\"\n"
+                       "     }\n"
+                       "    ]";
     parserJson(json);
 
 }
